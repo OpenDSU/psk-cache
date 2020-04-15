@@ -54,7 +54,7 @@ assert.callback('Cache: Old items are evicted when storing new data', (done) => 
     // Verify that the items are stored evenly on all 3 levels
     const cacheStorage = cache.storage;
 
-    assert.equal(CACHE_STORAGE_MAX_LEVELS, cacheStorage.length, 'Store levels count');
+    assert.equal(CACHE_STORAGE_MAX_LEVELS, cacheStorage.length, 'Storage levels count');
 
     // Level 1 assertions.
     assert.equal(CACHE_LIMIT, cacheStorage[0].size, 'Storage level limit');
