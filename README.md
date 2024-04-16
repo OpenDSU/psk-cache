@@ -21,6 +21,7 @@ if (cacheInstance.has('my-key')) {
 ```
 
 ## Cache factory options
+
 ```javascript
 const cacheInstance = Cache.factory({
     limit: 1000, // Maximum number of items that can be stored in the first storage level
